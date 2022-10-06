@@ -1,0 +1,472 @@
+/*
+Theme Name: NG Reason
+Author: Nevzat Gunay
+Description: Theme for Reason Digital.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
+*/
+
+@import"https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap";
+    .banner {
+    grid-column: main-start/main-end;
+    grid-template-rows: repeat(12, 1fr);
+    height: 35rem;
+    background-image: url(/reason/wp-content/uploads/2022/10/banner-1.jpg);
+    background-size: cover;
+}
+.banner .title {
+    grid-column: content-start/14;
+    grid-row: 3/span 3;
+    background-color: var(--c-blue);
+    color: var(--c-white);
+    padding: 0 2rem;
+    overflow: hidden;
+}
+@media screen and (min-width: 37.5em) {
+    .banner .title {
+    grid-column: content-start/11;
+}
+}@media screen and (min-width: 65em) {
+    .banner .title {
+    grid-column: content-start/9;
+}
+}.banner .description {
+    line-height: 2rem;
+    grid-column: content-start/14;
+    grid-row: 7/span 3;
+    background-color: var(--c-white);
+    padding: 0 2rem;
+    color: var(--c-green);
+    font-size: var(--f-12);
+    overflow: hidden;
+}
+@media screen and (min-width: 37.5em) {
+    .banner .description {
+    grid-column: content-start/10;
+}
+}@media screen and (min-width: 65em) {
+   .banner .description {
+    grid-column: content-start/7;
+    font-size: var(--f-18);
+}
+}.banner .cta {
+    grid-column: content-start/14;
+    grid-row: 11/12;
+}
+@media screen and (min-width: 37.5em) {
+   .banner .cta {
+    grid-column: content-start/7;
+}
+}@media screen and (min-width: 50em) {
+    .banner .cta {
+    grid-column: content-start/6;
+}
+}.info {
+    grid-column: main-start/main-end;
+    min-height: 25rem;
+}
+@media screen and (min-width: 50em) {
+    .info {
+    grid-template-columns: repeat(2, 1fr);
+}
+}.info img {
+    width: 100%;
+    height: 100%}
+@media screen and (min-width: 65em) {
+    .info img {
+    max-height: 30rem;
+}
+}.info .text {
+    color: var(--c-white);
+    background-color: var(--c-green);
+    padding: 3rem 5rem;
+}
+@media screen and (min-width: 50em) {
+    .info .text {
+    padding: 3rem;
+}
+}.help {
+    min-height: 25rem;
+    grid-column: main-start/main-end;
+    background-color: var(--c-light-gray);
+    color: var(--c-black);
+}
+.help p {
+    font-size: var(--f-16);
+}
+@media screen and (min-width: 50em) {
+    .help p {
+    font-size: var(--f-18);
+}
+}.help .info-panel {
+    background-color: var(--c-white);
+    padding: 3rem 0;
+    font-size: var(--f-30);
+    flex-direction: column;
+}
+@media screen and (min-width: 50em) {
+    .help .info-panel {
+    flex-direction: row;
+}
+}.help .info-panel select {
+    cursor: pointer;
+    font-size: var(--f-30);
+    margin: 0 1rem;
+    border: none;
+    color: var(--c-blue);
+}
+.what-we-do {
+    min-height: 40rem;
+    grid-column: main-start/main-end;
+    background-color: var(--c-blue);
+    color: var(--c-white);
+}
+.what-we-do .cards {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+}
+@media screen and (min-width: 50em) {
+    .what-we-do .cards {
+    grid-template-columns: repeat(4, 1fr);
+}
+}.what-we-do .cards .card {
+    height: 20rem;
+    align-items: center;
+    color: var(--c-black);
+    background-color: var(--c-white);
+    margin-block-end: var(--spacing-1);
+}
+
+.what-we-do li {list-style:none; padding:0; margin:0}
+
+@media screen and (min-width: 50em) {
+    .what-we-do .cards .card {
+    margin-block-end: var(--spacing-0);
+}
+}.grid {
+    display: grid;
+}
+.flex {
+    display: flex;
+}
+.f-column {
+    flex-direction: column;
+}
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.wrapper {
+    margin: 0 5rem;
+}
+.width-10 {
+    width: 10rem;
+}
+
+.container .header .cta-links ul li {width: 10rem;}
+
+.width-20 {
+    width: 20rem;
+}
+.width-25 {
+    width: 25rem;
+}
+.m-t-1 {
+    margin-block-start: var(--spacing-1);
+}
+.m-b-1 {
+    margin-block-end: var(--spacing-1);
+}
+.m-l-5 {
+    margin-inline-start: var(--spacing-5);
+}
+.m-r-5 {
+    margin-inline-end: var(--spacing-5);
+}
+.p-l-5 {
+    padding-inline-start: var(--spacing-5);
+}
+.p-r-5 {
+    padding-inline-end: var(--spacing-5);
+}
+.align-items-center {
+    align-items: center;
+}
+.align-self-center {
+    align-self: center;
+}
+.text-align-center {
+    text-align: center;
+}
+.justify-self-end {
+    justify-self: end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-s-b {
+    justify-content: space-between;
+}
+.justify-content-s-a {
+    justify-content: space-around;
+}
+.cta-link {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 700;
+}
+.cta-link.color-red {
+    color: var(--c-red);
+}
+.cta-link.color-white {
+    color: var(--c-white);
+}
+.cta-link.primary {
+    background-color: var(--c-white);
+}
+.cta-link.alternative {
+    border: 2px solid var(--c-white);
+    background-color: transparent;
+}
+.cta-link.black-border {
+    border: 2px solid var(--c-black);
+}
+.action-button {
+    background-color: var(--c-red);
+    color: var(--c-white);
+    font-weight: 700;
+    font-family: inherit;
+}
+:root {
+    --c-white:  #fff;
+    --c-green:  #478175;
+    --c-blue:  #497c8f;
+    --c-red:  #be2041;
+    --c-black:  #000000;
+    --c-gray:  #686868;
+    --c-light-gray:  #ececec;
+    --c-divider:  #dedede;
+    --f-12:  1.2rem;
+    --f-16:  1.6rem;
+    --f-18:  1.8rem;
+    --f-20:  2rem;
+    --f-22:  2.2rem;
+    --f-26:  2.6rem;
+    --f-30:  3rem;
+    --f-50:  5rem;
+    --f-70:  7rem;
+    --font-weight-600:  600;
+    --font-weight-700:  700;
+    --spacing-0:  0;
+    --spacing-05:  .5rem;
+    --spacing-1:  1rem;
+    --spacing-2:  2rem;
+    --spacing-3:  3rem;
+    --spacing-4:  4rem;
+    --spacing-5:  5rem;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: 400;
+}
+body {
+    min-height: 100vh;
+    background: var(--c-white);
+    transition: color .5s, background-color .5s;
+    font-family: Rubik, sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-size: 62.5%}
+a {
+    text-decoration: none;
+    color: unset;
+}
+h1 {
+    font-size: var(--f-30);
+}
+@media screen and (min-width: 65em) {
+    h1 {
+    font-size: var(--f-50);
+}
+}@media screen and (min-width: 90em) {
+    h1 {
+    font-size: var(--f-70);
+}
+}h2, h3 {
+    font-size: var(--f-20);
+    font-weight: var(--font-weight-600);
+}
+@media screen and (min-width: 65em) {
+    h2, h3 {
+    font-size: var(--f-22);
+}
+}@media screen and (min-width: 90em) {
+    h2, h3 {
+    font-size: var(--f-26);
+}
+}ul {
+    list-style-type: none;
+}
+p {
+    margin-block-start: var(--spacing-1);
+}
+.layout {
+    grid-template-columns: [main-start] 50px [content-start] repeat(12, 1fr) [content-end] 50px [main-end];
+}
+.layout-12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+.wrapper {
+    height: 100%;
+    padding: 3rem 0;
+}
+.container {
+    width: 100%;
+    background-color: var(--c-white);
+    margin: 0 auto;
+}
+@media screen and (min-width: 90em) {
+    .container {
+    width: 1440px;
+}
+}.container .header {
+    grid-column: main-start/main-end;
+    height: 12rem;
+    line-height: 3rem;
+}
+.container .header .search {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    border-left: 1px solid var(--c-light-gray);
+    border-right: 1px solid var(--c-light-gray);
+    padding-inline-start: 1.5rem;
+    margin-inline-start: 0;
+}
+@media screen and (min-width: 50em) {
+    .container .header .search {
+    margin-inline-start: 5rem;
+}
+}.container .header .search span {
+    padding-inline-start: .6rem;
+    font-size: var(--f-12);
+    font-weight: var(--font-weight-700);
+}
+.container .header .cta-links {
+    grid-row: 1/2;
+    grid-column: 4/-1;
+    font-size: var(--f-12);
+    margin-inline-end: 0;
+}
+.container .header .cta-links ul li:first-of-type {
+    display: none;
+}
+@media screen and (min-width: 37.5em) {
+    .container .header .cta-links ul li:first-of-type {
+    display: block;
+}
+}@media screen and (min-width: 50em) {
+    .container .header .cta-links {
+    margin-inline-end: 5rem;
+}
+}.container .header .cta-links ul li a {
+    font-weight: 700;
+}
+.container .header .cta-links ul li:first-of-type {
+    border-left: 1px solid var(--c-light-gray);
+    border-bottom: 2px solid green;
+}
+.container .header .cta-links ul li:nth-of-type(2) {
+    color: var(--c-white);
+    background-color: var(--c-red);
+}
+.container .header .logo {
+    height: 9rem;
+    grid-row: 2/3;
+    grid-column: 1/5;
+    border-top: 1px solid var(--c-light-gray);
+    padding-inline-start: 0;
+}
+@media screen and (min-width: 50em) {
+    .container .header .logo {
+    padding-inline-start: 5rem;
+}
+}.container .header .logo img {
+	width: 100%;
+    height: 4rem;
+}
+@media screen and (min-width: 50em) {
+    .container .header .logo img {
+		width: 100%;
+    	height: 5rem;
+}
+}.container .header .main-navigation {
+    display: none;
+    grid-row: 2/3;
+    grid-column: 5/-1;
+    border-top: 1px solid var(--c-light-gray);
+    padding-inline-end: 0;
+}
+@media screen and (min-width: 65em) {
+    .container .header .main-navigation {
+    display: block;
+}
+}@media screen and (min-width: 50em) {
+    .container .header .main-navigation {
+    padding-inline-end: 5rem;
+}
+}.container .header .main-navigation ul {
+    white-space: nowrap;
+    height: 9rem;
+}
+.container .header .hamburger {
+    display: flex;
+    justify-content: end;
+    grid-column: 5/-1;
+    border-top: 1px solid var(--c-light-gray);
+    cursor: pointer;
+}
+@media screen and (min-width: 65em) {
+    .container .header .hamburger {
+    display: none;
+}
+}.container .header .hamburger span {
+    margin-block-start: 3rem;
+    margin-inline-end: 3rem;
+    display: block;
+    position: absolute;
+    height: .2rem;
+    width: 3rem;
+    background: #1b1b1b;
+    border-radius: .1rem;
+    opacity: 1;
+}
+.container .header .hamburger span:nth-child(1) {
+    top: 2rem;
+}
+.container .header .hamburger span:nth-child(2) {
+    top: 1rem;
+}
+.container .content {
+    grid-column: main-start/main-end;
+}
+
+.updated {
+	display: none;
+}
